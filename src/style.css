@@ -33,6 +33,10 @@ header {
     gap: 20px;
 }
 
+.navigation-links:hover {
+    cursor: pointer;
+}
+
 .name {
     margin-left: 10px;
 }
@@ -45,7 +49,7 @@ header {
 --------------------------------
 */
 
-.home-body {
+.main {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -56,28 +60,33 @@ header {
     width: 100%;
 }
 
-.hours, .location, .review, .home-body>h1 {
+.hours, .location, .review, h1, .menu-list {
     background-color: #e4e4e7;
     border-radius: 4px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     width: 80%;
 }
 
-.hours>h2, .location>h2 {
-    align-self: flex-start;
+h1 {
+    font-size: 1.1rem;
 }
 
-.review>img {
+h2 {
+    align-self: flex-start;
+    margin-bottom: -20px;
+}
+
+img {
     height: 12rem;
     width: 16rem;
 }
 
 @media screen and (min-width: 1000px) {
-    .hours, .location, .review, .home-body>h1 {
-        width: 50%;
+    .hours, .location, .review, h1, .menu-list {
+        width: 30%;
     }
 }
