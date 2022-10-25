@@ -8,6 +8,12 @@
     background-image: linear-gradient(to right top, #78716c, #645c5b, #4e494a, #393739, #262626);
 }
 
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* header
 --------------------------------
 */
@@ -19,9 +25,10 @@ header {
     background-color: #e4e4e7;
     padding-top: 20px;
     padding-bottom: 20px;
+    width: 100%;
 }
 
-ul {
+.navigation-links {
     display: flex;
     gap: 20px;
 }
@@ -32,4 +39,45 @@ ul {
 
 .navigation {
     margin-right: 10px;
+}
+
+/* home body portion
+--------------------------------
+*/
+
+.home-body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.hours, .location, .review, .home-body>h1 {
+    background-color: #e4e4e7;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+}
+
+.hours>h2, .location>h2 {
+    align-self: flex-start;
+}
+
+.review>img {
+    height: 12rem;
+    width: 16rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .hours, .location, .review, .home-body>h1 {
+        width: 50%;
+    }
 }
